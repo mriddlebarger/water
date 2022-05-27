@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Jan  4 20:12:30 2021
-
-@author: mriddlebarger
 """
 
 #This code collects the contact data, then generates \n
@@ -50,10 +48,8 @@ alarm_group = pd.Series(alarm_group)
 alarm_group_list = ''
 #search alarm_group_list in browser
 driver.get(alarm_group_list)
-#input username and pw into contail login page
-driver.find_element_by_name('username').send_keys('')
-driver.find_element_by_name('password').send_keys('')
-driver.find_element_by_name('login').click()
+#input username and pw into login page
+
 #select all text on alarm group page, copy to clipboard
 driver.find_element_by_partial_link_text('#').send_keys(Keys.CONTROL + "a")
 driver.find_element_by_partial_link_text('#').send_keys(Keys.CONTROL + "c")
